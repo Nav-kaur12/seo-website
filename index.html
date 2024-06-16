@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+    <!-- navbar start -->
+
+    <nav class="navbar navbar-expand-lg bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#">Navbar</a>
+        <button class="navbar-toggler bg-light " type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./contact.html">Contact Us</a>
+            </li>
+
+
+          </ul>
+          <button class="btn btn-dark mx-1" data-bs-toggle="modal" data-bs-target="#loginform">Login</button>
+
+
+          <button class="btn btn-dark " type="submit" data-bs-toggle="modal" data-bs-target="#signup">signup</button>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginform" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Login Form</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sign up model -->
+
+    <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Create An Account</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <div style="height:80px; width: 100%; padding: 0%;" class="row">
+              <div class="col">
+                <label for="text">First Name</label>
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col">
+                <label for="text">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2"
+                placeholder="Another input placeholder">
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Other</label>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Create Password</label>
+              <input type="password" class="form-control" id="formGroupExampleInput">
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Confirmed Password</label>
+              <input type="password" class="form-control" id="formGroupExampleInput2">
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">signup</button>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- hero section start -->
+
+    <div id="hero" class="p-5">
+
+      <div id="text"
+        class="row mb-3 p-5 d-flex  align-items-center ">
+
+        <div id="herotext" class="col-sm-12 col-md-6 col-lg-6 col-12 p-3 text-light ">
+          <h1 class="fw-bold "> We Collect High <br> Quality leads</h1><br>
+          <p class="pe-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, id ipsa consequuntur distinctio
+            aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, temporibus?
+            nobis dolores eveniet pariatur illum architecto! Quod, dicta? Officia, expedita quidem quod ullam atque
+            itaque quae ipsum quibusdam blanditiis deserunt quas dolore.
+          </p>
+
+          <button type="button" class="btn btn-primary mt-5 ">Contact Us</button>
+        </div>
+
+        <div id="herovideo" class="col-sm-12 col-md-6 col-lg-6 col-12 ">
+          <video autoplay loop muted playsinline>
+            <source src="images/home_video.mp4" type="video/mp4">
+        </div>
+
+      </div>
+
+      <div class="custom-shape-divider-bottom-1715782706">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- cards section -->
+  <section class="makecard">
+
+    <div id="seo" class="cards">
+      <h2 class="fw-bold">What We Will Do For <br> Your Business<br> </h2>
+      <hr class="centered-hr">
+
+      <div class="row row-cols-1 row-cols-md-3 mt-5">
+
+        <div class="col-sm-12 col-md-12 col-lg-4 col-12 text-center">
+          <div style="border:0px solid white;" class="card h-100">
+            <img src="images/link.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Link Building </h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="arrowbutton">
+              <button type="button" class="btn btn-primary"> &#129122;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 col-12 text-center">
+          <div style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="card h-100">
+            <img src="images/speaker.gif" class="card-img-top border border-0" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Content Marketing</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.This
+                card is the first to show that equal height action</p>
+            </div>
+            <div class="arrowbutton">
+              <button type="button" class="btn btn-primary"> &#129122;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-4 col-12 text-center">
+          <div style="border:0px solid white;" class="card h-100">
+            <img src="images/seo.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">On Page Seo</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first action.</p>
+            </div>
+            <div class="arrowbutton">
+              <button type="button" class="btn btn-primary"> &#129122;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- cards end -->
+
+  <!-- Digital product -->
+  <section style="background-color: black;  border: 1px solid rgb(124, 59, 59); " class="setupsection p-5">
+    <div id="setupp">
+      <!-- <div class="setcontent"> -->
+        <div class="row row-cols-1 row-cols-md-3 ">
+
+        <div id="image" class="col-sm-12 col-md-12 col-lg-6 col-12 ">
+          <img src="images/phone.gif">
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6 col-12 text-light ">
+          <h2 class="fw-bold text-start">Step To Build A <br> Successfu Digital Products</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum harum aliquam sed magni magnam atque nobis,
+            ex labore inventore laudantium voluptatem, vero quod, quas quasi incidunt est laboriosam fugiat omnis
+            numquam beatae architecto culpa aut expedita ratione. Et assumenda perspiciatis reiciendis neque esse harum
+            incidunt, placeat, sit amet quae quas inventore laudantium voluptatem, vero quod, quas quasi incidunt est
+            laboriosam fugiat omnis numquam beatae architecto culpa.</p><br>
+
+          <button type="button" class="btn btn-primary  ">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Digital product end -->
+
+  <!-- grid online mode: next section -->
+  <section class="gridsection">
+
+    <div class="nextsection">
+      <div class="headsec">
+        <h2 class="fw-bold">
+          Genrating New Custom Via<br> Online Mode </h2>
+        <hr class="centered-hr">
+
+      </div>
+      <div class="gridsec">
+
+        <div class="row row-cols-1 row-cols-md-2 g-5">
+
+          <div class="col-sm-12 col-md-12 col-lg-6 col-12">
+            <div class="cardsec">
+              <div class="cardimg">
+                <img src="images/phone.gif" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body  pt-4">
+                <h5 class="card-title">Social Media Advertising title</h5>
+                <p class="card-text  p-2">This is a longer card with supporting text below as a natural lead-in to
+                  additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-6 col-12">
+            <div class="cardsec">
+              <div class="cardimg">
+                <img src="
+                images/infuence_img.jpeg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body  pt-4">
+                <h5 class="card-title">Influence Marketing</h5>
+                <p class="card-text  p-2">This is a longer card with supporting text below as a natural lead-in to
+                  additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-6 col-12">
+            <div class="cardsec">
+              <div class="cardimg">
+                <img src="images/content_img.jpeg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body  pt-4">
+                <h5 class="card-title">Content Marketing </h5>
+                <p class="card-text  p-2">This is a longer card with supporting text below as a natural lead-in to
+                  additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-6 col-12">
+            <div class="cardsec">
+              <div class="cardimg">
+                <img src="images/speaker.gif" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body  pt-4 ">
+                <h5 class="card-title">Referral Programs </h5>
+                <p class="card-text p-2">This is a longer card with supporting text below as a natural lead-in to
+                  additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- end section -->
+
+  <!-- client review section -->
+
+  <section>
+    <div class="reviewsec">
+      <div class="headsec">
+        <h2 class="fw-bold">
+          What clients Say<br> About Us</h2>
+        <hr class="centered-hr">
+      </div>
+
+      <div class="reviewcontent">
+        <div style="width: 100%;" class="row row-cols-1 row-cols-md-3 g-4 ps-5  ">
+          <div class="col-sm-12 col-md-12 col-lg-4 col-12">
+            <div class="card">
+              <img src="review.jpg" class="card-img-top" alt="...">
+              <div class="card-body .small-card-body">
+                <h5 class="card-title">Error FF</h5>
+                <p class="card-text">This is a wider card additional
+                  content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer ms-0 border border-0 ">
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-regular fa-star" style="color: #ad0de7;"></i>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 col-12">
+            <div class="card ">
+              <img src="review.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Error FF</h5>
+                <p class="card-text">This is additional
+                  content show that equal height action.</p>
+              </div>
+              <div class="card-footer ms-0 border border-0 ">
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-regular fa-star" style="color: #ad0de7;"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 col-12">
+            <div class="card">
+              <img src="review.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Error FF</h5>
+                <p class="card-text">This is additional
+                  content show that equal height action.</p>
+              </div>
+              <div class="card-footer ms-0 border border-0 ">
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-solid fa-star" style="color: #8605f0;"></i>
+                <i class="fa-regular fa-star" style="color: #ad0de7;"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- review section end -->
+
+  <!-- tips and trick section -->
+  <section>
+    <div class="tipsec">
+      <div class="headsec mt-5">
+        <h2 class="fw-bold">
+          Tips and Tricks From <br> Our Experts </h2>
+        <hr class="centered-hr">
+
+      </div>
+
+      <div class="tipcontent mb-4">
+
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-5">
+          <div class="col">
+            <div class="card">
+              <img src="tutor.jpeg" class="card-img-top" alt="...">
+              <div class="read_date">
+                <p><i class="fa-solid fa-book-open-reader fa-sm"></i>:5000</p>
+                <p>March 26,2023</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cyber Security</h5>
+                <p class="card-text">This is a longer card with text below as a natural lead-in to additional
+                  content.</p>
+                <div class="read-btn">
+                  <button style="display: flex; flex-direction: row;" type="button"
+                    class="btn btn-dark  text-light">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="tutor.jpeg" class="card-img-top" alt="...">
+              <div class="read_date">
+                <p><i class="fa-solid fa-book-open-reader fa-sm"></i>:5000</p>
+                <p>March 26,2023</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer supporting text below as a natural content. This content is a
+                  little bit longer.</p>
+                <div class="read-btn">
+                  <button style="display: flex; flex-direction: row; " type="button"
+                    class="btn btn-dark text-light">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="tutor.jpeg" class="card-img-top" alt="..."> 
+              <div class="read_date">
+                <p><i class="fa-solid fa-book-open-reader fa-sm"></i>:5000</p>
+                <p>March 26,2023</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with text below as a natural lead-in to additional
+                  content.</p>
+                <div class="read-btn">
+                  <button style="display: flex; flex-direction: row; " type="button"
+                    class="btn btn-dark text-light">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="tutor.jpeg" class="card-img-top" alt="...">
+              <div class="read_date">
+                <p><i class="fa-solid fa-book-open-reader fa-sm"></i>:5000</p>
+                <p>March 26,2023</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with text below as a natural This content is a
+                  little bit longer.</p>
+                <div class="read-btn">
+                  <button style="display: flex; flex-direction: row;" type="button"
+                    class="btn btn-dark text-light">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+  <footer>
+    <div class="footersection">
+      <div class="custom-shape-divider-top-1715782430">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <div id="firstrow" class="row ">
+        <div id="icon_s" class="col-sm-12 col-md-6 col-lg-4 col-12">
+          <img src="images/icon1.jpeg">
+          <p>(+00)1234567890</p>
+        </div>
+        <div id="icon_s" class="col-sm-12 col-md-6 col-lg-4 col-12">
+          <img src="msgbx.gif">
+          <p>(+00)1234567890</p>
+        </div>
+        <div id="icon_s" class="col-sm-12 col-md-6 col-lg-4 col-12">
+          <img src="images/map.gif">
+          <p>(+00)1234567890</p>
+        </div>
+      </div>
+
+      <div id="Ab_sub" class=" row d-flex ps-5 pe-5 ">
+        <div class="col text-light">
+          <h3>About</h3>
+          <p>Our Story</p>
+          <p>Our Story</p>
+          <p>Our Story</p>
+        </div>
+
+        <div class="col text-light">
+          <h3>About</h3>
+          <p>Our Story</p>
+          <p>Our Story</p>
+          <p>Our Story</p>
+        </div>
+        <div class="col text-light">
+          <h3>About</h3>
+          <p>Our Story</p>
+          <p>Our Story</p>
+          <p>Our Story</p>
+        </div>
+
+        <div class="col text-light  ">
+          <label for="heading">
+            <h4>Subscribe</h4>
+          </label for="buttons">
+          <div class="d-flex gap-2">
+            <input type="text" placeholder="Recipient's Name">
+            <button type="button" class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="last_hr ">
+      <div class="row d-flex align-items-center ps-5 pe-5">
+        <div style="color: white;" class="col">
+          <p>copyright @2024 All rights reserved | This template is made with by <span style="color:pink">Nav
+              Dhiman</span></p>
+
+        </div>
+        <div id="last_icn" class="col d-flex justify-content-end align-items-center gap-2">
+          <i class="fa-brands fa-instagram fa-xs" style="color: #f0f2f4; height:28px; width:28px; border-radius: 50%; background-color: var(--secondary-color);  display: flex;
+          align-items: center;
+          justify-content: center;"></i>
+          <i class="fa-brands fa-whatsapp fa-xs" style="color: #f0f2f4; height:28px; width:28px; border-radius: 50%;  background-color: var(--secondary-color);
+           display: flex;
+          align-items: center;
+          justify-content: center;"></i>
+          <i class="fa-brands fa-twitter fa-xs" style="color: #f0f2f4; height:28px; width:28px; border-radius: 50%;  background-color: var(--secondary-color);  display: flex;
+          align-items: center;
+          justify-content: center;"></i>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
